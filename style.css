@@ -1,0 +1,125 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+* {
+	color: white;
+}
+
+img,
+a {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	flex: 1 0 auto;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: fit-content;
+	margin: auto;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+#description {
+	margin-top: -10px;
+	margin-bottom: 1em;
+}
+
+#description p {
+	margin: 0.5em 0;
+}
+
+#socials {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#socials img {
+	margin: 0.5em;
+	transform: none;
+	transition: transform 0.2s;
+}
+
+#socials img:hover {
+	transform: scale(1.2);
+	transition: transform 0.2s;
+}
+
+#socials img:not(.osu) {
+	--stroke-color: white;
+	filter: drop-shadow(1px 1px 0 var(--stroke-color)) drop-shadow(-1px 1px 0 var(--stroke-color)) drop-shadow(1px -1px 0 var(--stroke-color)) drop-shadow(-1px -1px 0 var(--stroke-color));
+}
+
+footer {
+	font-size: 0.8em;
+	padding: 2em 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
