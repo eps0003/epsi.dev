@@ -1,5 +1,5 @@
 * {
-	color: white;
+	color: inherit;
 }
 
 body {
@@ -9,7 +9,6 @@ body {
 
 	margin: 0;
 	font-family: "Roboto", sans-serif;
-	text-align: center;
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -17,11 +16,6 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	animation: gradient 15s ease infinite;
 }
 
 img,
@@ -33,17 +27,9 @@ a {
 }
 
 main {
-	flex: 1;
-
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
-	padding: 1em;
-}
-
-h1 {
-	font-size: 3em;
+	flex: 1;
 }
 
 #description {
@@ -82,6 +68,37 @@ h1 {
 .kag {
 	width: 42px;
 	padding: 3px;
+}
+
+#top {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+
+	color: white;
+	padding: 2em;
+	text-align: center;
+
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
+
+#top h1 {
+	font-size: 3em;
+	margin-top: 0;
+}
+
+#current-projects {
+	height: 1000px;
+	padding: 4em 2em;
+}
+
+#current-projects h1 {
+	font-size: 3em;
+	margin-top: 0;
 }
 
 footer {
